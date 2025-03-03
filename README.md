@@ -26,9 +26,9 @@ This library handles these perceptual differences automatically, ensuring your c
 
 ## Features
 
-* Calculate perceived lightness and relative luminance
-* Find optimal contrasting colors
-* Adjust colors based on perceived lightness
+* Calculating perceived lightness and relative luminance
+* Finding optimal contrasting colors
+* Adjusting colors based on perceived lightness
 * Thread-safe caching of contrast decisions
 * Support for both SwiftUI and UIKit
 * Precise color adjustments (±0.1 perceived lightness)
@@ -46,9 +46,10 @@ This library handles these perceptual differences automatically, ensuring your c
 ### Swift Package Manager
 
 Add ColorPerception to your project through Xcode:
-1. File > Add Packages...
-2. Enter package URL: `https://github.com/gregmturek/color-perception`
-3. Select "Up to Next Major Version"
+1. Go to **File > Add Package Dependencies...**.
+2. Search for the package URL: `https://github.com/gregmturek/color-perception`.
+3. In the **Dependency Rule** list, select **Up to Next Major Version**.
+4. Click **Add Package**.
 
 Or add it to your `Package.swift`:
 
@@ -57,6 +58,17 @@ dependencies: [
     .package(url: "https://github.com/gregmturek/color-perception", from: "1.0.0")
 ]
 ```
+
+## Demo App
+
+Check out [ColoRoulette](https://github.com/gregmturek/coloroulette), a game built with SwiftUI to demonstrate ColorPerception in action:
+
+<div align="center">
+  <img src="https://github.com/gregmturek/coloroulette/raw/main/coloroulette-light-demo.gif" alt="ColoRoulette Light Demo" width="22.5%" style="margin-right: 5%">
+  <img src="https://github.com/gregmturek/coloroulette/raw/main/coloroulette-dark-demo.gif" alt="ColoRoulette Dark Demo" width="22.5%">
+</div>
+
+The game challenges players to determine whether black or white would provide better contrast against randomly selected colors, exactly the kind of decision this library helps automate.
 
 ## Usage
 
